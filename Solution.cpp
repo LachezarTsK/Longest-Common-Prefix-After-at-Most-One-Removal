@@ -9,7 +9,7 @@ class Solution {
 public:
     int longestCommonPrefix(const string& source, const string& target) const {
         int maxPrefixLength = min(source.length(), target.length());
-        int checkLengthSource = min(source.length(), maxPrefixLength + 1);
+        int checkLengthSource = min(static_cast<int>(source.length()), maxPrefixLength + 1);
 
         int indexSource = 0;
         int indexTarget = 0;
